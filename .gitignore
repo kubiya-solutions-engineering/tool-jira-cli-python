@@ -1,6 +1,7 @@
 # Editor Swap files
 *.kate-swp
 *.swp
+*.swo
 
 # Directory settings
 **/.directory
