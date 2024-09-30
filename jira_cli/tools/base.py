@@ -11,7 +11,7 @@ class JiraCliTool(Tool):
             icon_url=JIRA_ICON_URL,
             type="docker",
             image="ghcr.io/kubiyabot/jira-cli:latest",
-            content=full_content,
+            content=content,
             args=args,
             env=COMMON_ENVIRONMENT_VARIABLES,
             secrets=COMMON_SECRET_VARIABLES,
