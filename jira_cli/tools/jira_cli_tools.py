@@ -6,7 +6,7 @@ jira_cli = JiraCliTool(
     name="jira_cli",
     description="""Interacts with Jira using the CLI. Before passing command arguments, check they
         are correct by using either `--help` or the `help` command.""",
-    content="echo $JIRA_OAUTH_TOKEN && jira {{ .command}}",
+    content="env && jira {{ .command}}",
     args=[
         Arg(name="command",
             type="str",
